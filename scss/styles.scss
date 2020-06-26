@@ -433,6 +433,11 @@ footer {
   color: #686868;
 }
 
+.lazy {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
+
 @media screen and (min-width: 900px) {
   .img-1 {
     grid-area: img-1;

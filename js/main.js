@@ -53,8 +53,10 @@ function lazyLoad() {
 
     const observer = new IntersectionObserver((entries, imageObserver) => {
         entries.forEach(entry => {
+            entry.target.classList.add('lazy');
             if (entry.isIntersecting) {
                 preloadImage(entry.target);
+                entry.target.classList.remove('lazy');
                 imageObserver.unobserve(entry.target);
             }
         });
