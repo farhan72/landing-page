@@ -427,6 +427,12 @@ footer {
   }
 }
 
+.footer-content-copyright {
+  margin: auto;
+  text-transform: capitalize;
+  color: #686868;
+}
+
 @media screen and (min-width: 900px) {
   .img-1 {
     grid-area: img-1;
